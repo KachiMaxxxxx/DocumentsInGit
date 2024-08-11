@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML SEMANTIC TAGS</title>
+    <link rel="stylesheet" href="/stylesheet/style5.css" />
+    <link rel="icon" href="/html/images/maxicon.jpg" />
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+    </header>
+    <nav aria-labelledby="primary-navigation">
+      <h2 id="primary-navigation"></h2>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <h3></h3>
+        <section>
+          <h4></h4>
+          <p></p>
+        </section>
+      </article>
+      <article>
+        <section>
+          <table>
+            <caption>
+              PERSONAL INVOLVEMENT
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">DATE</th>
+                <th scope="col">PROCEDURE</th>
+                <th scope="col">ANAESTHETIST</th>
+                <th scope="col">SIGNATURE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">&nbsp;</th>
+                <td>Monitoring</td>
+                <td>EXAMPLE</td>
+                <td>Instance</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp;</th>
+                <td>Endotracheal Intubation</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp;</th>
+                <td>Mechanical Ventilation</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">
+                  UNDERGRADUATE TRAINING PROGRAM -STUDENT'S LOG BOOK
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
+      <article>
+        <h3>FORMS</h3>
+        <section>
+          <form action="http://httpbin.org/get">
+            <fieldset>
+              <legend>Personal Info</legend>
+              <p>
+                <label for="userName">Username</label>
+                <input
+                  type="text"
+                  name="userName"
+                  id="userName"
+                  placeholder="jane"
+                  autocomplete="on"
+                  required
+                  autofocus
+                />
+              </p>
+              <p>
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Type Here"
+                  required
+                />
+              </p>
+              <p>
+                <label for="phone">Phone number</label>
+                <input
+                  type="Tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="+234 907 443 935"
+                  autocomplete="on"
+                />
+              </p>
+              <p>
+                <label for="shoe">Shoes</label>
+                <select name="shoe" id="shoe">
+                  <optgroup label="English">
+                    <option value="broques">Broques</option>
+                    <option value="loafers">Loafers</option>
+                  </optgroup>
+                  <optgroup label="Italian">
+                    <option value="monkStrap">MonkStrap</option>
+                    <option value="moccassins">Moccassin</option>
+                  </optgroup>
+
+                  <option value="others">Others</option>
+                </select>
+              </p>
+
+              <p>
+                <label for="shoe">SHOES</label>
+                <input type="text" name="" id="shoe" list="shoe-list" />
+                <datalist id="shoe-list">
+                  <option value="broques"></option>
+                  <option value="loafers"></option>
+                  <option value="monkstrap"></option>
+                  <option value="moccassins"></option>
+                  <option value="othershoes"></option>
+                </datalist>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Pick a Pet</legend>
+              <p>
+                <input type="radio" name="pet" id="dog" value="dog" />
+                <label for="dog">Dog</label>
+              </p>
+              <p>
+                <input type="radio" name="pet" id="cat" value="cat" />
+                <label for="cat">Cat</label>
+              </p>
+              <p>
+                <input type="radio" name="pet" id="Parrot" value="Parrot" />
+                <label for="Parrot">Parrot</label>
+              </p>
+              <p>
+                <input type="radio" name="pet" id="Pig" value="Pig" />
+                <label for="Pig">Pig</label>
+              </p>
+              <p>
+                <input type="radio" name="pet" id="horse" value="horse" />
+                <label for="horse">Horse</label>
+              </p>
+              <p>
+                <input type="radio" name="pet" id="None" value="None" />
+                <label for="None">None</label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Login now!</legend>
+              <p>
+                <button type="submit">Submit</button>
+              </p>
+              <p>
+                <button type="reset">Clear</button>
+              </p>
+            </fieldset>
+          </form>
+
+          <aside>
+            <details>
+              <summary></summary>
+              <p></p>
+            </details>
+          </aside>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p></p>
+    </footer>
+  </body>
+</html>

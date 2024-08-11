@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+.nav{
+    background:#2D080A;
+    color: peachpuff;
+    text-align: center;
+    font: 1.5rem cursive ;
+    padding: 0.5rem;
+    
+}
+.image{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    outline: 2px solid black;
+    outline-offset: .25rem;
+    border-radius: 50%;
+}
+.main{
+    background: #7C3626;
+    color: black;
+    text-align: center;
+    font: 3rem sans-serif;
+    width: auto;
+}
+.sample{
+    background-color: #F5853F;
+}
+.foot{
+    background: black;
+    color: papayawhip;
+    text-align: center;
+}
