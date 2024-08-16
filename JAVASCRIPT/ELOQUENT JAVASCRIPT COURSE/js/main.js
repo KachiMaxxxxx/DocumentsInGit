@@ -1,15 +1,15 @@
-/* HASH CODE */
+/* ELOQUENT JS CHAPTER 2 */
 
-
-/* for(let number = "#"; number <= "#######"; number= number + "#" ){
+//HASH CODE
+for(let number = "#"; number <= "#######"; number= number + "#" ){
   console.log(number);
  }
- */
+ 
 
 
 /* FIZZBUZZ CODE */
 
-/* for (let print = 1; print <= 100; print++){
+ for (let print = 1; print <= 100; print++){
 if( print % 3===0 && print % 5 === 0){
 console.log("FizzBuzz");
 }
@@ -21,10 +21,10 @@ console.log("Buzz");
 }
 else {console.log(print);}
 }
-*/
 
-/* NB: You can represent same code as... */
-/* for (let print = 1; print <= 100; print++) {
+
+ /*NB: You can represent same code as... */
+ for (let print = 1; print <= 100; print++) {
   switch (true) {
     case (print % 3 === 0 && print % 5 === 0): 
       console.log("FizzBuzz");
@@ -42,11 +42,12 @@ else {console.log(print);}
   
   break;
 }
-} */
+} 
 
+/* CHAPTER 3 */
 
 /* CHESBOARD CODE */
-/*  let board = "";
+  let board = "";
  let size = 8;
 for(let x = 0; x < size; x++){
  for(let y = 0; y < size; y++){
@@ -55,11 +56,11 @@ for(let x = 0; x < size; x++){
  board += "\n";
 }
 console.log(board)
- */
+ 
 
 
 /* MINIMUM CODE USING SWITCH */
-/* function min(a, b) {
+ function min(a, b) {
   switch (true) {
     case (a < b): return a;
     case (a > b): return b;
@@ -67,10 +68,10 @@ console.log(board)
   }
 }
 console.log(min(0, 10));
-console.log(min(0,-10)); */
+console.log(min(0,-10)); 
 
 /* USING IF STATEMENTS ARE BETTER */
-/* function min(a, b) {
+function min(a, b) {
   if (a < b) {
     return a;
   } else if (a > b) {
@@ -82,9 +83,9 @@ console.log(min(0,-10)); */
 console.log(min(0, 10));
 console.log(min(0,-10));
 
- */
+ 
 
- /* RECURSION PROBLEM 
+ /* RECURSION PROBLEM */
  function isEven(x) {
   if (x === 0) {
     return "even";
@@ -101,8 +102,10 @@ console.log(min(0,-10));
 console.log(isEven(50));
 console.log(isEven(75));
 console.log(isEven(-1)); 
- */
-/* function countChar(string,char){
+
+/* BEAN COUNTING */
+ 
+ function countChar(string,char){
   let count=0
   for (x=0;x<=string.length;x++){
     if (string[x]===char){
@@ -116,4 +119,3 @@ function countBs(string){
 
 console.log(countBs("BOB"));
 console.log(countChar("kakkerlak","k"));
- */
