@@ -84,8 +84,8 @@ console.log(min(0,-10));
 
  */
 
-/* RECURSION PROBLEM */
-/* function isEven(x) {
+ /* RECURSION PROBLEM 
+ function isEven(x) {
   if (x === 0) {
     return "even";
   }
@@ -100,9 +100,8 @@ console.log(min(0,-10));
 }
 console.log(isEven(50));
 console.log(isEven(75));
-console.log(isEven(-1)); */
-
-
+console.log(isEven(-1)); 
+ */
 /* function countChar(string,char){
   let count=0
   for (x=0;x<=string.length;x++){
