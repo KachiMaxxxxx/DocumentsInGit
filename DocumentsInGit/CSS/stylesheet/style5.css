@@ -11,3 +11,7 @@ caption {
 tfoot {
   text-align: center;
 }
+nav li{
+  display: flex;
+  align-items:;
+}
