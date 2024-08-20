@@ -53,33 +53,34 @@ body {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-auto-rows: 75px auto 75px;
-  grid-template-areas:"hd hd hd hd hd hd hd hd hd"
-  "mn mn mn mn mn mn mn sb sb"
-  "ft ft ft ft ft ft ft ft ft";
-  gap:1rem;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn sb sb"
+    "ft ft ft ft ft ft ft ft ft";
+  gap: 1rem;
 }
 
-.el{
-  background-color:brown;
-  color:black;
+.el {
+  background-color: brown;
+  color: black;
   font-size: smaller;
-  display:grid;
-  place-content:center;
+  display: grid;
+  place-content: center;
 }
-header.el{
-  grid-area:hd;
+header.el {
+  grid-area: hd;
   font-size: 3rem;
 }
-.sidebar{
-  grid-area:sb;
-  background-color:red;
+.sidebar {
+  grid-area: sb;
+  background-color: red;
 }
-.footer{
-  grid-area:ft;
+.footer {
+  grid-area: ft;
 }
 .one {
   background: url(/DocumentsInGit/CSS/ROUGHBOOK/IMAGES/kachi.jpg);
-
+  background-repeat: no-repeat;
 }
 .container {
   display: grid;
@@ -88,14 +89,12 @@ header.el{
   grid-auto-rows: minmax(150px, auto);
   gap: 0.5rem 1rem;
 }
- 
 
 .box {
   background-color: black;
   color: papayawhip;
   font-size: 2rem;
   padding: 0.5rem;
-
 }
 .box:nth-child(1) {
   background-color: blue;
@@ -111,8 +110,8 @@ header.el{
   grid-column: 1/5;
   grid-row: 3/4;
 }
-.list{
-  display:flex;
+.list {
+  display: flex;
   justify-content: flex-start;
-  gap:2rem;
+  gap: 2rem;
 }
