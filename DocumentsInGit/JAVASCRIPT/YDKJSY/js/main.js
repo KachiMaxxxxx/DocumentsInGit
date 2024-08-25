@@ -72,7 +72,7 @@ console.log(tableFor("pizza", JOURNAL));
 
  */
 
-// todo COMBINING FUNCTIONS TO BUILD A CORRELATION CALCULATOR FOR JOURNAL
+/* // todo COMBINING FUNCTIONS TO BUILD A CORRELATION CALCULATOR FOR JOURNAL
 
 
 
@@ -154,3 +154,8 @@ showResult.push("peanut teeth");
     return showResult; 
   }
   console.log(showResult(JOURNAL));
+ */
+
+
+
+  // * FURTHER ARRAYOLOGY 
