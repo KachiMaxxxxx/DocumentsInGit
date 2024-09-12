@@ -2,12 +2,12 @@
 
 
 
-/* import { JOURNAL } from "./journal.js";
+import { JOURNAL } from "./journal.js";
 
 
 
-* HASH CODE
-for(let number = "#"; number <= "#######"; number= number + "#" ){
+// * HASH CODE
+/* for(let number = "#"; number <= "#######"; number= number + "#" ){
   console.log(number);
  }
  
@@ -124,8 +124,8 @@ function countBs(string){
 }
 
 console.log(countBs("BOB"));
-console.log(countChar("kakkerlak","k"));
- */
+console.log(countChar("kakkerlak","k")); */
+
 /*  
 *SUMMARY
 This chapter taught you how to write your own functions. The function keyword, when used as an expression, can create a function value. When used as a statement, it can be used to declare a binding and give it a function as its value. Arrow functions are yet another way to create functions.
@@ -185,21 +185,21 @@ console.log(journal)
 
 
 //? NORMAL FUNCTION LOOP
- /*
+/*
 function tableFor(event, journal) {
-  let table = [0, 0, 0, 0];
-  for (let i = 0; i < journal.length; i++) {
-    let entry = journal[i], index = 0;
-    if (entry.events.includes(event)) index += 1;
-    if (entry.squirrel) index += 2;
-    table[index] += 1;
-  }
-  return table;
+ let table = [0, 0, 0, 0];
+ for (let i = 0; i < journal.length; i++) {
+   let entry = journal[i], index = 0;
+   if (entry.events.includes(event)) index += 1;
+   if (entry.squirrel) index += 2;
+   table[index] += 1;
+ }
+ return table;
 }
 
 console.log(tableFor("pizza", JOURNAL));
 
- */
+*/
 
 
 //? MODERN ARRAY LOOP
@@ -220,8 +220,8 @@ console.log(tableFor("pizza", JOURNAL));
 
  */
 
- // todo COMBINING FUNCTIONS TO BUILD A CORRELATION CALCULATOR FOR JOURNAL
- 
+// todo COMBINING FUNCTIONS TO BUILD A CORRELATION CALCULATOR FOR JOURNAL
+
 
 
 /*
@@ -306,31 +306,31 @@ showResult.push("peanut teeth");
 
 
 
- /* 
-  * FURTHER ARRAY METHODS
-  let todoList = [];
+/* 
+ * FURTHER ARRAY METHODS
+ let todoList = [];
 function remember(task) {
-  todoList.push(task);
+ todoList.push(task);
 }
 function remove(task){
-  todoList.pop(task);
+ todoList.pop(task);
 }
 function getTask() {
-  return todoList.shift();
+ return todoList.shift();
 }
 function rememberUrgently(task) {
-  todoList.unshift(task);
+ todoList.unshift(task);
 }
-  console.log([1,2,3,2,1].indexof(2));
-  console.log([1,2,3,2,1]lastIndexof(2));
+ console.log([1,2,3,2,1].indexof(2));
+ console.log([1,2,3,2,1]lastIndexof(2));
 
-  !Others include;
+ !Others include;
 
-  *slice:returns an array with only elements between them,end is exclusive;
-  *concat:appends arrays together to create a new array,
-  function remove(array, index) {
-  return array.slice(0, index)
-    .concat(array.slice(index + 1));
+ *slice:returns an array with only elements between them,end is exclusive;
+ *concat:appends arrays together to create a new array,
+ function remove(array, index) {
+ return array.slice(0, index)
+   .concat(array.slice(index + 1));
 }
 console.log(remove(["a", "b", "c", "d", "e"], 2));
 // → ["a", "b", "d", "e"],
@@ -366,7 +366,7 @@ console.log(max(4,1,7,0,2,6));
 math.min ;math.max; math.random; math.floor; math.ceil; math.round;
 
 
- //* DESTRUCTURING involves reading a property directly from it's object name by enclosing it in a square bracket or curly braces
+//* DESTRUCTURING involves reading a property directly from it's object name by enclosing it in a square bracket or curly braces
 
 //* OPTIONAL PROPERTY ACCESS crosschecks whether an object truly exists before defining its properties else it returns undefined;
 
@@ -382,4 +382,33 @@ You can iterate over arrays using a special kind of for loop: for (let element o
 */
 
 
-//*EXERCICES
+//*EXERCISES CHAPTER 4
+
+function range(start, end, step = 1) {
+  let result = [];
+  if (step > 0 && start <= end) {
+    for ( let i = start; i <= end; i += step) {
+      result.push(i);
+    }
+  }
+  else if (step < 0 && start < end) {
+    for ( let i = start; i >= end; i += end) {
+      result.push(i);
+    }
+  }
+  else {
+    return "SYNTAX ERROR";
+  }
+
+  return result;
+}
+console.log(range(1,10))
+
+function sum(array){
+let total=0;
+for ( let value of array  ){
+  total+= value;
+}
+return total;
+}
+console.log(sum(range(1,10)))
