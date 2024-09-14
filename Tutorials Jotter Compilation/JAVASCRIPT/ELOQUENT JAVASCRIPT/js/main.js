@@ -1,3 +1,5 @@
+//! remember to better organize your comments into blocks
+
 //! ELOQUENT JS CHAPTER 2 
 
 
@@ -382,8 +384,12 @@ You can iterate over arrays using a special kind of for loop: for (let element o
 */
 
 
-//*EXERCISES CHAPTER 4
+/*
 
+*EXERCISES CHAPTER 4
+
+
+*RANGE FUNCTION 
 function range(start, end, step = 1) {
   let result = [];
   if (step > 0 && start <= end) {
@@ -412,3 +418,37 @@ for ( let value of array  ){
 return total;
 }
 console.log(sum(range(1,10)))
+
+*REVERSING AN ARRAY
+function reverseArray(arr){
+  let newArray = [];
+  for (let i = 0;i < arr.length; i++){
+    newArray.unshift(arr[i]);
+  }
+  return newArray;
+}
+console.log(reverseArray([1,3,5,7]));
+*
+function reverseArray(arr){
+  let newArray = [];
+  for (let i=arr.length-1; i>=0;i--){
+    newArray.push(arr[i]);
+  }
+  return newArray;
+}
+console.log(reverseArray([1,3,5,7]));
+
+
+*REVERSED ARRAY PURE FUNCTION
+function reversedInPlace(arr){
+  let temp;
+  for(let i=0;i<Math.floor(arr.length/2);i++){
+    temp=arr[i]
+    arr[i]= arr[arr.length-1 - i];
+    arr[arr.length-1 -i] = temp;
+  }
+  return arr;
+}
+console.log(reversedInPlace([1,3,5,7]));
+*/
+
