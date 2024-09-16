@@ -450,5 +450,11 @@ function reversedInPlace(arr){
   return arr;
 }
 console.log(reversedInPlace([1,3,5,7]));
+
+! Note: COMPLETE REMAINING TASKS/EXERCISES
+!LIST
+! DEEP COMPARISON
 */
+
+
 
